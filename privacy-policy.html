@@ -6,110 +6,188 @@
 <title>Privacy Policy — Guruji</title>
 <style>
   :root { color-scheme: light; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 32px 20px 80px;
     color: #1e293b;
-    line-height: 1.65;
-    background: #f8fafc;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
   }
-  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; color: #4338ca; }
-  .updated { color: #64748b; font-size: 0.85rem; margin-bottom: 2rem; }
-  .fill-in {
-    background: #fef3c7;
-    border: 1px solid #fcd34d;
-    border-radius: 6px;
-    padding: 2px 6px;
+  .header {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header img { height: 40px; }
+  .header a {
+    color: white;
+    text-decoration: none;
     font-weight: 600;
+    font-size: 1.25rem;
   }
-  code { background: #eef2ff; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
-  ul { padding-left: 1.25rem; }
-  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px 28px; }
-  .notice {
-    background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 10px;
-    padding: 14px 18px; font-size: 0.9rem; margin-bottom: 24px;
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 48px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  h1 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+  }
+  .updated {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .intro {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 32px;
+    padding: 20px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: #667eea;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  h2::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: #667eea;
+    border-radius: 2px;
+  }
+  p { margin-bottom: 16px; color: #475569; }
+  ul {
+    padding-left: 24px;
+    margin-bottom: 16px;
+  }
+  li {
+    margin-bottom: 8px;
+    color: #475569;
+  }
+  li strong { color: #1e293b; }
+  code {
+    background: #eef2ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #667eea;
+  }
+  a { color: #667eea; }
+  a:hover { text-decoration: underline; }
+  .footer {
+    text-align: center;
+    padding: 24px;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+  }
+  .footer a { color: white; }
+  @media (max-width: 640px) {
+    .card { padding: 24px 20px; }
+    h1 { font-size: 1.5rem; }
   }
 </style>
 </head>
 <body>
-
-  <div class="notice">
-    <strong>Before publishing:</strong> replace every <span class="fill-in">bracketed placeholder</span>
-    below with your real details, then remove this notice box. Host this file at a stable, public URL
-    (e.g. <code>https://yourdomain.com/privacy-policy.html</code>) and use that URL in the Google Cloud
-    Console OAuth consent screen and/or the Play Console Data Safety section.
+  <div class="header">
+    <a href="https://guruji-edu.in">← Back to Guruji</a>
   </div>
 
-  <div class="card">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: <span class="fill-in">[DATE]</span></p>
+  <div class="container">
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: August 4, 2026</p>
 
-    <p>
-      Guruji ("the App") is a private tutoring management tool operated by
-      <span class="fill-in">[Your Name / Organization]</span> ("the Tutor", "we", "us").
-      This policy explains what data the App accesses, how it is stored, and who can see it.
-    </p>
+      <p class="intro">
+        Guruji ("the App") is a private tutoring management tool operated by
+        Guruji Education ("we", "us"). This policy explains what data the App accesses, 
+        how it is stored, and who can see it.
+      </p>
 
-    <h2>1. How Guruji stores data</h2>
-    <p>
-      Guruji has no external server or third-party database. All application data — student
-      records, batches, fee history, announcements, and class schedules — is stored as a single
-      JSON file inside the Tutor's own <strong>Google Drive</strong> account, in a folder named
-      <code>Guruji_App_Data</code>. Google is the only infrastructure provider involved.
-    </p>
+      <h2>1. How Guruji stores data</h2>
+      <p>
+        Guruji has no external server or third-party database. All application data — student
+        records, batches, fee history, announcements, and class schedules — is stored as a single
+        JSON file inside the Tutor's own <strong>Google Drive</strong> account, in a folder named
+        <code>Guruji_App_Data</code>. Google is the only infrastructure provider involved.
+      </p>
 
-    <h2>2. What data is collected</h2>
-    <ul>
-      <li><strong>From Google Sign-In:</strong> your name, email address, and profile picture, used only to identify you as a Tutor or Student inside the App.</li>
-      <li><strong>Entered by the Tutor:</strong> student name, email address, and phone number, batch assignment, and fee payment records.</li>
-      <li><strong>Files you upload:</strong> question papers, study material, and student submissions, stored directly in the Tutor's Google Drive.</li>
-    </ul>
-    <p>We do not collect analytics, advertising identifiers, location data, or payment card information.</p>
+      <h2>2. What data is collected</h2>
+      <ul>
+        <li><strong>From Google Sign-In:</strong> your name, email address, and profile picture, used only to identify you as a Tutor or Student inside the App.</li>
+        <li><strong>Entered by the Tutor:</strong> student name, email address, and phone number, batch assignment, and fee payment records.</li>
+        <li><strong>Files you upload:</strong> question papers, study material, and student submissions, stored directly in the Tutor's Google Drive.</li>
+      </ul>
+      <p>We do not collect analytics, advertising identifiers, location data, or payment card information.</p>
 
-    <h2>3. Google Drive access and permissions</h2>
-    <p>
-      When a Tutor signs in, the App requests permission to create and manage files it creates on the
-      Tutor's Drive. When a Student signs in, the App requests read-only permission so it can display
-      schedules, files, and fee status shared by the Tutor. Neither role grants the App access to any
-      other files in your Google account.
-    </p>
+      <h2>3. Google Drive access and permissions</h2>
+      <p>
+        When a Tutor signs in, the App requests permission to create and manage files it creates on the
+        Tutor's Drive. When a Student signs in, the App requests read-only permission so it can display
+        schedules, files, and fee status shared by the Tutor. Neither role grants the App access to any
+        other files in your Google account.
+      </p>
 
-    <h2>4. Who can see your data</h2>
-    <p>
-      Only the Tutor and the specific students the Tutor has enrolled can access data, and only the
-      data relevant to their own batch. We do not sell, rent, or share your data with any third party.
-      Data is never used for advertising.
-    </p>
+      <h2>4. Who can see your data</h2>
+      <p>
+        Only the Tutor and the specific students the Tutor has enrolled can access data, and only the
+        data relevant to their own batch. We do not sell, rent, or share your data with any third party.
+        Data is never used for advertising.
+      </p>
 
-    <h2>5. Data retention and deletion</h2>
-    <p>
-      Because all data lives in the Tutor's own Google Drive, the Tutor controls retention and deletion
-      directly. Removing a student in the App revokes their Drive access; deleting the
-      <code>Guruji_App_Data</code> folder from Drive permanently deletes all associated data.
-    </p>
+      <h2>5. Data retention and deletion</h2>
+      <p>
+        Because all data lives in the Tutor's own Google Drive, the Tutor controls retention and deletion
+        directly. Removing a student in the App revokes their Drive access; deleting the
+        <code>Guruji_App_Data</code> folder from Drive permanently deletes all associated data.
+      </p>
 
-    <h2>6. Children's data</h2>
-    <p>
-      Guruji may be used to manage tutoring for minors. Student accounts are created and controlled
-      entirely by the Tutor (e.g., a parent/guardian or the minor's own supervised Google account), and
-      the Tutor is responsible for obtaining any necessary parental consent before enrolling a minor.
-    </p>
+      <h2>6. Children's data</h2>
+      <p>
+        Guruji may be used to manage tutoring for minors. Student accounts are created and controlled
+        entirely by the Tutor (e.g., a parent/guardian or the minor's own supervised Google account), and
+        the Tutor is responsible for obtaining any necessary parental consent before enrolling a minor.
+      </p>
 
-    <h2>7. Your choices</h2>
-    <p>
-      You may revoke Guruji's access to your Google account at any time via
-      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">
-        Google Account → Security → Third-party apps with account access</a>.
-    </p>
+      <h2>7. Your choices</h2>
+      <p>
+        You may revoke Guruji's access to your Google account at any time via
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">
+          Google Account → Security → Third-party apps with account access</a>.
+      </p>
 
-    <h2>8. Contact</h2>
-    <p>
-      Questions about this policy or your data can be sent to
-      <span class="fill-in">[your-support-email@example.com]</span>.
-    </p>
+      <h2>8. Contact</h2>
+      <p>
+        Questions about this policy or your data can be sent to
+        <a href="mailto:support@guruji-edu.in">support@guruji-edu.in</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Guruji Education. All rights reserved.</p>
+    <p><a href="https://guruji-edu.in">Home</a> · <a href="/terms-of-service.html">Terms of Service</a></p>
   </div>
 </body>
 </html>
