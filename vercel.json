@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/((?!assets|privacy|terms|favicon|icons|app-logo).*)", "destination":"/index.html"}]}
