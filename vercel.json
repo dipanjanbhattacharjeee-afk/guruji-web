@@ -1,5 +1,9 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": null,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!assets|privacy|terms|favicon|icons|app-logo).*)", "destination": "/index.html" }
   ]
 }
