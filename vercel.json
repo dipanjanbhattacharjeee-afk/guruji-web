@@ -1,5 +1,1 @@
-{
-  "rewrites": [
-    { "source": "/((?!assets|favicon|icons|app-logo|privacy|terms).*)", "destination": "/index.html" }
-  ]
-}
+{"rewrites":[{"source":"/((?!assets|privacy|terms|favicon|icons|app-logo).*)", "destination":"/index.html"}]}
