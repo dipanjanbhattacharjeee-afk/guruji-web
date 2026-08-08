@@ -35,39 +35,40 @@
   <body>
     <div id="root">
       <!-- Static content for SEO & Google OAuth verification (replaced by React when loaded) -->
-      <div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;background:linear-gradient(to bottom right,#fafaf9,#fffbeb,#fff7ed);font-family:Inter,system-ui,sans-serif;">
-        <div style="max-width:420px;text-align:center;">
-          <h1 style="font-size:2.5rem;font-weight:700;color:#d97706;margin-bottom:8px;">GURUJI</h1>
-          <p style="font-size:1rem;color:#57534e;margin-bottom:16px;">Private Tutor Management Platform</p>
-          <p style="font-size:0.875rem;color:#78716c;line-height:1.6;margin-bottom:24px;">
-            GURUJI is a free classroom management application designed for private tutors and coaching institutes. 
-            Manage batches, students, fees, timetables, online classes, and study materials — all in one place.
-          </p>
-          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-bottom:20px;">
-            <h2 style="font-size:1rem;font-weight:600;color:#44403c;margin-bottom:12px;">Key Features</h2>
-            <ul style="text-align:left;font-size:0.8rem;color:#57534e;line-height:1.8;list-style:none;padding:0;margin:0;">
-              <li>✓ Batch & Class Management</li>
-              <li>✓ Student Records & Enrollment</li>
-              <li>✓ Fee Tracking & Payment History</li>
-              <li>✓ Timetable & Schedule Management</li>
-              <li>✓ Online Class Links</li>
-              <li>✓ Study Materials & File Sharing</li>
-              <li>✓ Announcements & Notices</li>
-            </ul>
-          </div>
-          <div style="background:#f0fdf4;border-radius:12px;padding:16px;margin-bottom:20px;">
-            <p style="font-size:0.8rem;color:#166534;margin:0;">
-              <strong>🔒 Your Data, Your Control:</strong> All data is stored exclusively in your own Google Drive account. 
-              GURUJI does not store any user data on external servers.
-            </p>
-          </div>
-          <p style="font-size:0.75rem;color:#a8a29e;">
-            <a href="/privacy-policy.html" style="color:#d97706;">Privacy Policy</a> · 
-            <a href="/terms-of-service.html" style="color:#d97706;">Terms of Service</a>
-          </p>
-          <p style="font-size:0.75rem;color:#a8a29e;margin-top:12px;">© 2026 Minimal Coder. All rights reserved.</p>
-        </div>
-      </div>
+      <header style="text-align:center;padding:40px 20px;">
+        <h1>GURUJI</h1>
+        <p><strong>Private Tutor Management Platform</strong></p>
+      </header>
+      <main style="max-width:600px;margin:0 auto;padding:20px;text-align:center;">
+        <section>
+          <h2>About GURUJI</h2>
+          <p>GURUJI is a free classroom management application designed for private tutors and coaching institutes. Manage batches, students, fees, timetables, online classes, and study materials — all in one place.</p>
+        </section>
+        <section>
+          <h2>Key Features</h2>
+          <ul style="text-align:left;list-style:disc;padding-left:20px;">
+            <li>Batch & Class Management</li>
+            <li>Student Records & Enrollment</li>
+            <li>Fee Tracking & Payment History</li>
+            <li>Timetable & Schedule Management</li>
+            <li>Online Class Links with Google Meet</li>
+            <li>Study Materials & File Sharing</li>
+            <li>Announcements & Notices</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Why GURUJI Requests Google Drive Access</h2>
+          <p>GURUJI uses your Google Drive to store and sync your classroom data. This serverless approach means all your data stays in your own Google Drive account — GURUJI does not store any user data on external servers.</p>
+        </section>
+        <section>
+          <h2>Data Privacy</h2>
+          <p>Your Data, Your Control: All data is stored exclusively in your own Google Drive account. GURUJI does not collect, store, or have access to any user data on external servers.</p>
+        </section>
+      </main>
+      <footer style="text-align:center;padding:20px;">
+        <p><a href="/privacy-policy.html">Privacy Policy</a> · <a href="/terms-of-service.html">Terms of Service</a></p>
+        <p>© 2026 Minimal Coder. All rights reserved.</p>
+      </footer>
       <noscript>
         <p style="text-align:center;padding:20px;">Please enable JavaScript to use GURUJI.</p>
       </noscript>
